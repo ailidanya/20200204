@@ -1,0 +1,52 @@
+<!-- 相对定位：position: relative;相对于原来的位置 -->
+<!-- 绝对定位：position: absolute;相对于已定位的父级元素，如果没有则相对于body -->
+<!-- 视图定位：position: fixed;相对于视图定位 -->
+<!-- 一般不写position，默认为position: static;是一种普通定位 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>相对定位</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			/**
+			 * 
+			 提示：相对定位实际上被看作普通流定位模型的一部分，因为元素的位置相对于它在普通流中的位置。
+			 绝对定位相对于已定位的父级元素,如果父级元素没有定位,则
+			 相对于body
+			 */
+			#father
+			{
+				padding: 5px;
+				width: 100px;
+				height: 100px;
+				background-color: #0000FF;
+				margin-left: 10px;
+			}
+			#son
+			{
+				/* margin-top: -40px; */
+				width: 80px;
+				height: 80px;
+				background-color: #008000;
+				position: absolute;
+				left: 120px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="father">
+			<p>你好</p>
+				 <p>下午好</p>
+			<!-- 为什么这里son会下移 -->
+			<div id="son">
+				你好
+			</div>
+		</div>
+		helloworld
+	</body>
+</html>
+

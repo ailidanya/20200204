@@ -1,0 +1,16 @@
+/* 未被访问 */
+a:link{
+	color: blue;
+}
+/* 已访问 */
+a:visited{
+	color: #FF0000;
+}
+/* 鼠标经过 */
+a:hover{
+	color: #008000;
+}
+/* 被点击的时刻 */
+a:active{
+	color: blueviolet;
+}

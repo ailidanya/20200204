@@ -1,0 +1,390 @@
+<!-- 眼睛用黑白渐变做出来 -->
+<!-- 嘴型的弧度最难,它是一个圆的1/4 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小可爱的哆啦A梦</title>
+		<style type="text/css">
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			#all_Div{
+				margin-top: 3.5%;
+				margin-left: 35%;
+				width: 400px;
+				height: 600px;
+				/* background-color:skyblue; */
+				/* background-color:black; */
+				float: left;
+			}
+			#heada{
+				width: 190px;
+				height: 172px;
+				border-radius: 120px;
+				/* background-color: black; */
+				/* background-color: bisque; */
+				/* 灰色:background-color: burlywood; */
+				background-color: pink;
+				/* background-color: purple; */
+				/* background-color: cornflowerblue; */
+				margin: 20px 0 0 100px;
+				border: 1px solid black;
+			}
+			.eye{
+				width: 40px;
+				height: 45px;
+				border-radius: 25px;
+				background-color: white;
+				margin: 23px 0 0 90px;
+				border: 1px solid black;
+				position: absolute;
+				z-index: 4;
+				/* background-image: radial-gradient(red,50%,gray); */
+			}
+			.eye2{
+				margin-left: 50px;
+				margin-top: 22px;
+			}
+			#eyeBlack1{
+				width: 16px;
+				height: 16px;
+				border-radius: 10px;
+				background-image: radial-gradient(white,white,black,black,black,black,black);
+				/* background-image: radial-gradient(white,20%,black); */
+				margin: 23px 0 0 100px;
+				border: 1px solid black;
+				margin-left: 8px;
+				margin-top: 18px;
+			}
+			#eyeBlack2{
+				width: 16px;
+				height: 16px;
+				border-radius: 10px;
+				background-image: radial-gradient(white,white,black,black,black,black,black);
+				/* background-image: radial-gradient(white,20%,black); */
+				margin: 41px 0 0 100px;
+				border: 1px solid black;
+				margin-left: 12px;
+				margin-top: 18px;
+			}
+			#facea{
+				width: 155px;
+				height: 128px;
+				border-radius: 120px;
+				background-color: white;
+				margin: 20px 0 0 100px;
+				border: 1px solid black;
+				margin-left: 17.5px;
+				margin-top: 42px;
+				position: absolute;
+				z-index: 3;
+			}
+			#nose{
+				width: 20px;
+				height: 20px;
+				border-radius: 20px;
+				background-image: radial-gradient(white,21%,red);
+				margin: 23px 0 0 300px;
+				border: 1px solid black;
+				margin-left: 61px;
+				margin-top: 20px;
+			}
+			#string{
+				width: 1px;
+				height: 55px;
+				background-color: grey;
+				margin-left: 72px;
+			}
+			#mouth{
+				width: 100px;
+				height: 50px;
+				border-radius: 0 0 60px 60px;
+				border-left: 1px solid transparent;
+				border-right: 1px solid transparent;
+				border-bottom: 2px solid black;
+				margin-left: 22px;
+				margin-top: -52px;
+			}
+			.whisker{
+				width: 2px;
+				height: 50px;
+				background-color: black;
+			}
+			.w1{
+				transform: rotate(65deg);
+				margin-left: 107px;
+				margin-top: -88px;
+			}
+			.w2{
+				transform: rotate(90deg);
+				margin-left: 110px;
+				margin-top: -35px;
+			}
+			.w3{
+				transform: rotate(110deg);
+				margin-left: 108px;
+				margin-top: -37px;
+			}
+			.w4{
+				transform: rotate(-110deg);
+				margin-left: 38px;
+				margin-top: -50px;
+			}
+			.w5{
+				transform: rotate(-90deg);
+				margin-left: 35px;
+				margin-top: -62px;
+			}
+			.w6{
+				transform: rotate(-65deg);
+				margin-left: 38px;
+				margin-top: -65px;
+			}
+			/* @@@@！！！！ */
+			.necktie{
+			    width: 118px;
+			    height: 11px;
+			    position: absolute;
+			    margin-top: 158px;
+			    margin-left: 34px;
+			    background: crimson;
+				/* background-color: gray; */
+			    border-radius: 10px;
+			    border:2px solid black;
+			    box-shadow: 0px 0px 6px 0px rgba(0,0,0,5);/*设置阴影*/
+			    z-index: 5;
+			}
+			/*勋章*/
+			#bell{
+			    width:22px;
+			    height:22px;
+			    position: absolute;
+			    margin-top: 163px;
+			    margin-left: 83px;
+			    background: gold;
+			    border-radius: 20px;
+			    border:1px solid black;
+			    box-shadow: 0px 0px 6px 0px rgba(0,0,0,5);/*设置阴影*/
+			    z-index: 6;
+			}
+			/*勋章上的线*/
+			.line{
+			    height:1px;
+			    position: absolute;
+			    background: black;
+			}
+			.L1{
+			    width: 20px;
+			    margin-top: 5px;
+			    margin-left: 1px;
+			}
+			.L2{
+			    width: 22px;
+			    margin-top: 7px;
+			}
+			/*勋章上的小黑圆点*/
+			.blackCir{
+			    width:7px;
+			    height:7px;
+			    position: absolute;
+			    margin-top: 10px;
+			    margin-left: 7px;
+			    background: black;
+			    border-radius: 120px;
+			}
+			/*勋章上的第三条线*/
+			.line3{
+			    width: 2px;
+			    height:6px;
+			    position: absolute;
+			    margin-top: 16px;
+			    margin-left: 9.5px;            /*强迫症很头疼*/
+			    background: black;
+			}
+			.leftSleeve{
+			    width: 29px;
+			    height:58px;
+			    position: absolute;
+			    margin-top: 150px;
+			    margin-left: 25px;
+			    /* background: cornflowerblue; */
+				/* background-color: black; */
+				/* background-color: bisque; */
+				background-color: pink;
+				/* background-color: purple; */
+				/* background-color: cornflowerblue; */
+			    border-radius: 60px 0px 12px 12px;
+			    border:1px solid black;
+			    transform: rotate(58deg);/*倾斜角度*/
+			}
+			.rightSleeve{
+			    width: 29px;
+			    height:58px;
+			    position: absolute;
+			    margin-top: 150px;
+			    margin-left: 135px;
+			    /* background: cornflowerblue; */
+				/* background-color: black; */
+				/* background-color: bisque; */
+				background-color: pink;
+				/* background-color: purple; */
+				/* background-color: cornflowerblue; */
+			    border-radius: 12px 12px 0px 60px;
+			    border:1px solid black;
+			    transform: rotate(120deg);
+			    z-index: 1;
+			}
+			.clothes{
+			    width: 110px;
+			    height: 70px;
+			    position: absolute;
+			    margin-top: 190px;
+			    margin-left: 40px;
+			    /* background: cornflowerblue; */
+				/* background-color: black; */
+				/* background-color: bisque; */
+				background-color: pink;
+				/* background-color: purple; */
+				/* background-color: cornflowerblue; */
+			    border-left: 1px solid black;
+			    border-right: 1px solid black;
+			    z-index: 2;
+			}
+			.hand{
+			    width:34px;
+			    height:34px;
+			    position: absolute;
+			    border-radius: 17px;
+			    background: white;
+			    border: 1px solid black;
+			    box-shadow: 0px 0px 6px 0px rgba(0,0,0,5);/*设置阴影*/
+			    z-index: 1;
+			}
+			.leftHand{
+			    margin-top: 179px;
+			    margin-left: -7px;
+			}
+			.rightHand{
+			    margin-top: 179px;
+			    margin-left: 162px;
+			}
+			.Circular{
+			    width: 90px;
+			    height:90px;
+			    position: absolute;
+			    margin-top: 145px;
+			    margin-left: 50px;
+			    background: white;
+			    border: 1px solid black;
+			    border-radius: 120px;
+			    z-index: 2;
+			}
+			.midCircular{
+			    width: 70px;
+			    height:35px;
+			    position: absolute;
+			    margin-top: 45px;
+			    margin-left: 10px;
+			    border-radius: 0px 0px 100px 100px;/*半圆*/
+			    background: white;
+			    border: 1px solid black;
+			}
+			.foot{
+			    width: 72px;
+			    height:18px;
+			    position: absolute;
+			    background: white;
+			    border-radius: 18px 13px 13px 8px;
+			    border: 1px solid black;
+			    box-shadow: 0px 0px 9px 0px rgba(0,0,0,5);/*设置阴影*/
+			    z-index: 4;
+			}
+			.leftFoot{
+			    margin-top: 250px;
+			    margin-left: 22px;
+			}
+			.rightFoot{
+			    margin-top: 250px;
+			    margin-left: 97px;
+			}
+			.cirOnFoot{
+			    width: 20px;
+			    height:20px;
+			    position: absolute;
+			    margin-top: 240px;
+			    margin-left: 85px;
+			    background: white;
+			    border-radius: 12px;
+			    border-top: 2px solid black;
+			    border-left: 1px solid black;
+			    border-right: 1px solid black;
+			    border-bottom: 1px solid white;
+			    z-index: 3;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="all_Div">
+			<!-- A梦 -->
+			<!-- 先画头 -->
+			<div id="heada">
+				<!-- 左眼 -->
+				<div class="eye eye1">
+					<!-- 眼黑白 -->
+					<div id="eyeBlack1"> </div>
+				</div>
+				<!-- 右眼 -->
+				<div class="eye eye2">
+					<!-- 眼黑白 -->
+					<div id="eyeBlack2"> </div>
+				</div>
+				<!-- 脸 -->
+				<div id="facea">
+					<!-- 鼻子 -->
+					<div id="nose"> </div>
+					<!-- 鼻子下面的竖线 -->
+					<div id="string"> </div>
+					<!-- 嘴巴 -->
+					<div id="mouth"> </div>
+					<!-- 胡须 -->
+					<div class="whisker w1">	</div>
+					<div class="whisker w2">	</div>
+					<div class="whisker w3">	</div>
+					<div class="whisker w4">	</div>
+					<div class="whisker w5">	</div>
+					<div class="whisker w6">	</div>
+				</div>
+				<!-- 领带 -->
+				<div class="necktie"> </div>
+				<!-- 铃铛 -->
+				<div id="bell">
+					<!--勋章上的线-->
+					<div class="line L1"></div>
+					<div class="line L2"></div>
+					<!--勋章上的小黑圆点-->
+					<div class="blackCir"></div>
+					<div class="line3"></div>
+				</div>
+				<!-- 衣服 -->
+				<div class="leftSleeve"> </div>
+				<div class="rightSleeve"> </div>
+				<div class="clothes"> </div>
+				<!-- 衣服装饰与口袋 -->
+				<div class="Circular">
+				    <!--衣服上中间的半圆-->
+				    <div class="midCircular"></div>
+				</div>
+				<!-- 手 -->
+				<div class="hand leftHand"></div>
+				<div class="hand rightHand"></div>
+				<!--脚-->
+				<div class="foot leftFoot"></div>
+				<div class="foot rightFoot"></div>
+				<!--腿缝-->
+				<div class="cirOnFoot"></div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,72 @@
+#register{
+	text-align: center;
+	width: 500px;
+	height: 420px;
+	background-color: rgba(255,255,255,1);
+	margin-top: -4.2px;
+	margin-left:33.75%;
+}
+.com{
+	margin-top: 20px;
+	width: 300px;
+	height: 42px;
+	border: 0px;
+	background-position: left;
+	background-size: 30px;
+	background-repeat: no-repeat;
+	text-indent: 30px;
+	border-radius: 3px;  
+}
+button{
+	margin-top: 30px;
+	width: 300px;
+	height: 42px;
+	border: 0px;
+	color: white;
+	background-color: #f40;
+	border-radius: 3px;
+}
+#log1{
+	border-bottom:  1px solid gray;
+	background-image: url(../../img/我的.svg);
+	background-position: left;
+	background-size: 30px;
+	background-repeat: no-repeat;
+	text-indent: 40px;
+}
+#log2{
+	border-bottom:  1px solid gray;
+	background-image: url(../../img/内部邮件-01.svg);
+	background-position: left;
+	background-size: 30px;
+	background-repeat: no-repeat;
+	text-indent: 40px;
+  
+}
+#log3{
+	border-bottom:  1px solid gray;
+	background-image: url(../../img/phone.svg);
+	background-position: left;
+	background-size: 30px;
+	background-repeat: no-repeat;
+	text-indent: 40px;
+
+}
+#log4{
+	border-bottom:  1px solid gray;
+	background-image: url(../../img/密码.svg);
+	background-position: left;
+	background-size: 30px;
+	background-repeat: no-repeat;
+	text-indent: 40px;
+ 
+}
+#color{
+	background-color:#666699;
+}
+p{
+	font-size: 10px;
+	color: gray;
+	margin-right: -220px;
+	margin-top: 40px;
+}
